@@ -20,3 +20,117 @@
     --h2-font: 3.8rem;
     --p-font:1rem;
 }
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+header{
+    position: fixed;
+    width: 100%;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #000;
+    padding: 15px 6%;
+}
+.logo{
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: var(--text-color) ;
+}
+span{
+    color: var(--main-color);
+}
+.navlist{
+    display: flex;
+}
+.navlist li{
+    position: relative;
+}
+.navlist a{
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+.navlist a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--main-color);
+    left: 0;
+    bottom: -4px;
+    transition: ease .40s;
+}
+.navlist a:hover::after{
+    width: 100%;
+}
+#menu-icon{
+    font-size: 20px;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+.h-btn a{
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 8px 26px;
+    border: 2px solid transparent;
+    transition: ease .40s;
+}
+.h-btn .sign-in{
+    color: var(--text-color);
+    background: var(--main-color);
+    border-radius: 30px;
+}
+.h-btn .sign-in:hover{
+    background: transparent;
+    border: 2px solid var(--main-color);
+}
+section{
+    padding: 120px 16%;
+}
+.home{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    background-image: radial-gradient(circle at 99% 33%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 37%,transparent 37%, transparent 100%),radial-gradient(circle at 46% 16%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 43%,transparent 43%, transparent 100%),radial-gradient(circle at 99% 25%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 22%,transparent 22%, transparent 100%),radial-gradient(circle at 57% 88%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 86%,transparent 86%, transparent 100%),radial-gradient(circle at 82% 78%, hsla(235,0%,48%,0.03) 0%, hsla(235,0%,48%,0.03) 22%,transparent 22%, transparent 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
+}
+.eu{
+    float: right;
+    width: 550px;
+    border-radius: 50%;
+    margin-left: 150px;
+}
+.home-text{
+    padding-top: 120px;
+}
+.home-text h1{
+    font-size: var(--big-font);
+    color: var(--text-color);
+    line-height: 1.11;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin: 0 0 25px;
+
+}
+.home-text h4{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    line-height: 1.21;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.count{
+
+}
