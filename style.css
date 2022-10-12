@@ -96,7 +96,7 @@ section{
     padding: 120px 16%;
 }
 .home{
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -108,9 +108,9 @@ section{
 }
 .eu{
     float: right;
-    width: 550px;
-    border-radius: 50%;
-    margin-left: 150px;
+    width: 400px;
+    margin-left: 250px;
+    margin-bottom: 50px;
 }
 .home-text{
     padding-top: 120px;
@@ -131,6 +131,26 @@ section{
     font-weight: 700;
     margin-bottom: 40px;
 }
+.btn{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 16px 33px;
+    background: var(--main-color);
+    color: var(--text-color);
+    border-radius: 30px;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    transition: ease .30s;
+}
+.btn:hover{
+    transform: translateY(-10px);
+    background: transparent;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
 .count{
-
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
 }
