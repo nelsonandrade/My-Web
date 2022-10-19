@@ -248,5 +248,5 @@ section{
     line-height: 30px;
 }
 .box:hover{
-   box-shadow: 20px 20px 20px;
+   box-shadow: 20px 20px 20px rgba(228, 222, 224);
 }
