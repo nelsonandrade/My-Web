@@ -250,3 +250,50 @@ section{
 .box:hover{
    box-shadow: 20px 20px 20px rgba(228, 222, 224);
 }
+.portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 4.4rem;
+}
+.col{
+    position: relative;
+}
+.col img{
+    max-width: 100%;
+    width: 620px;
+    height: auto;
+    border-radius: 10px;
+}
+.layer{
+    background: transparent;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    transition: all .35s;
+}
+.layer:hover{
+    background: linear-gradient(rgba(22, 22, 22, 0.5) 0%, #16141589 100%);
+}
+.layer h3{
+    position: absolute;
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-color);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all .35s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
