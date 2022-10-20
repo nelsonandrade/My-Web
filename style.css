@@ -297,3 +297,112 @@ section{
     bottom: 49%;
     opacity: 1;
 }
+.blog-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 2rem;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 4.4rem;
+}
+.blog-content .row img{
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+.row{
+    padding: 0 0 30px 0;
+    background: var(--bg-color);
+    border-radius: 10px;
+    transition: all .35s;
+}
+.row p{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--other-color);
+    margin: 10px 0px 8px 25px;
+}
+.row h3{
+    font-size: 22px;
+    line-height:1.45;
+    font-weight: 600;
+    transition: all .35s;
+    margin: 10px 0px 8px 25px;
+    color: var(--secound-color);
+}
+.row h3:hover{
+    color: var(--main-color);
+}
+.contact{
+    background: #161616;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+.contact h2{
+    color: var(--text-color);
+    font-size: 1.9rem;
+}
+.contact .newslatter{
+    background: var(--bg-color);
+    margin-top: 1rem;
+    border-radius: 30px;
+    padding: 4px 10px;
+    max-width: 100%;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact .newslatter input{
+    border: none;
+    outline: none;
+}
+.contact .newslatter .cta{
+    background:var(--main-color) ;
+    color: var(--text-color);
+    padding: 8px 20px;
+    border-radius: 30px;
+}
+.copyright{
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.copyright p{
+    font-size: 14px;
+    font-weight: 500;
+}
+.icon a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--main-color);
+    width: 35px;
+    height: 35px;
+    margin: 0px 5px;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    border-radius: 50%;
+    transition: all .35s;
+}
+.icon a:hover{
+    transform: translateY(-10%);
+}
+
+@media (max-width: 1380px){
+    header{
+        padding: 18px 2%;
+        transition: .2s;
+    }
+    section{
+        padding: 80px 2%;
+        transition: .3s;
+    }
+    :root{
+        --big-font: 4.7rem;
+        --h2-font: 2.5rem;
+    }
+}
