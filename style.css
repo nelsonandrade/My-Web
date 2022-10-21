@@ -386,20 +386,20 @@ section{
     color: var(--text-color);
     font-size: 1.2rem;
     border-radius: 50%;
-    transition: all .35s;
+    transition: all .40s;
 }
 .icon a:hover{
-    transform: translateY(-10%);
+    transform: translateY(-5%);
 }
 
 @media (max-width: 1380px){
     header{
         padding: 18px 2%;
-      
+        transition: .2s;
     }
     section{
         padding: 80px 2%;
-       
+       transition: .3s;
     }
     :root{
         --big-font: 4.7rem;
@@ -459,12 +459,12 @@ section{
     .about{
         margin-top: 50px;
     }
-.navlist a{
+    .navlist a{
     display: block;
     padding: 1rem;
     margin: 1.2rem;
     border-left: 2px solid var(--text-color);
-}
+    }
     .navlist a:hover{
         background: var(--text-color);
         color: var(--secound-color);
@@ -473,7 +473,7 @@ section{
     .navlist a::after{
         display: none;
     }
-    .navlist .active{
+    .navlist.active{
         top: 100%;
     }
 }
