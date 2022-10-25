@@ -552,12 +552,12 @@ section{
         padding: 90px 4%;
     }
     header{
-        padding: 14px 4%;
+        padding: 12px;
     }
     :root{
-        --big-font: 3.2rem;
-        --h2-font: 1.8rem;
-        --p-font: 0.9rem;
+        --big-font: 3rem;
+        --h2-font: 1.6rem;
+        --p-font: 0.7rem;
     }
     .home img{
         display: none;
@@ -572,4 +572,5 @@ section{
     .count span{
         font-size: 1.2rem;
     }
+  
 }
