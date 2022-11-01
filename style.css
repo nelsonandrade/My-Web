@@ -4,8 +4,8 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    scroll-behavior: smooth;
-    scroll-padding-top: 3rem;
+    /*scroll-behavior: smooth;
+    scroll-padding-top: 3rem;*/
     font-family: 'Poppins', sans-serif;
 }
 
@@ -665,4 +665,59 @@ section{
         font-size: 1.2rem;
     }
   
+}
+/*page lecture*/
+
+.lecture h2{
+    font-size: var(--h2-font);
+    color: var(--text-color);
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    line-height: 1.11;
+    font-weight: 800;
+    letter-spacing: 1px;
+    
+}
+.lecture p{
+    text-align: justify;
+    text-indent: inherit;
+    justify-items: center;
+    padding: 0 30px;
+}
+.lecture h4{
+    text-align: center;
+    color: var(--other-color);
+    font-size: var(--h2-color);
+}
+.travaux {
+    width: 1300px;
+    height: auto;
+    margin: 20px 100px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+ h1{
+    font-size: var(--h2-font);
+    color: var(--text-color);
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    line-height: 1.11;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.site img{
+    width: 600px;
+    height: 300px;
+    margin-left: 15px;
+    padding: 10px 10px;
+    box-shadow: 2px 2px 5px white;
+
+}
+div .desc{
+    padding: 15px;
+    text-align: center;
+    font-size: var(--p-font);
 }
