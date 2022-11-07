@@ -459,6 +459,62 @@ section{
 .icon a:hover{
     transform: translateY(-5%);
 }
+/*page lecture*/
+
+.lecture h2{
+    font-size: var(--h2-font);
+    color: var(--text-color);
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    line-height: 1.11;
+    font-weight: 800;
+    letter-spacing: 1px;
+    
+}
+.lecture p{
+    text-align: justify;
+    text-indent: inherit;
+    justify-items: center;
+    padding: 0 30px;
+}
+.lecture h4{
+    text-align: center;
+    color: var(--other-color);
+    font-size: var(--h2-color);
+}
+.travaux {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+ h1{
+    font-size: var(--h2-font);
+    color: var(--text-color);
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    line-height: 1.11;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.travaux img{
+    max-width: 600px;
+    max-height: 300px;
+    margin-left: 15px;
+    padding: 10px 10px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px white;
+}
+.travaux p{
+    max-width: 600px;
+    padding: 15px;
+    text-align: center;
+    font-size: var(--p-font);
+}
 
 @media (max-width: 1380px){
     header{
@@ -493,6 +549,7 @@ section{
         width: 70%;
         height: 50%;
     }
+    
 }
 
 @media (max-width: 1120px){
@@ -540,22 +597,54 @@ section{
     .navlist.active{
         top: 100%;
     }
-    
 }
-@media (max-width: 770px){
-    .travaux{
-        width: 475px;
-        margin: 5px 200px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        gap: 10px;
+ @media (max-width: 1250px){
+    .travaux {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        margin: 0 auto;
         padding: 10px;
     }
     .travaux img{
-        width: 450px;
+        max-width: 450px;
+        max-height: 300px;
+        /*margin-left: 15px;*/
+        padding: 10px 10px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 5px white;
+    }
+    .travaux p{
+        max-width: 600px;
+        padding: 15px;
+        text-align: center;
+        font-size: var(--p-font);
+    }
+    
+}
+@media (max-width: 970px){
+    .travaux{
+       margin-left: 200px;
+    }
+
+}
+@media (max-width: 770px){
+    .travaux{
+        width: auto;
+        margin: 100px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 15px;
+        padding: 10px;
+    }
+    .travaux a,img{
+        width: 500px;
         border-radius: 15px;
         box-shadow: 2px 2px 4px black; 
+    }
+    .desc{
+        width: 400px;
     }
     .count{
         display: flex;
@@ -603,7 +692,7 @@ section{
         --p-font: 0.9rem;
     }
 }
-@media (max-width: 630px){
+@media (max-width: 650px){
     section{
         padding: 90px 4%;
     }
@@ -646,6 +735,25 @@ section{
     .count span{
         font-size: 1.2rem;
     }
+  
+    .travaux a,img{
+        width: 450px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 4px black; 
+    }
+    .desc{
+        width: 400px;
+    }
+}
+@media (max-width: 600px){
+    .travaux{
+        margin-left: 20px;
+    }
+}
+@media (max-width: 550px){
+    .travaux{
+        margin: 10px;
+    }
 }
 @media (max-width: 486px){
     section{
@@ -675,60 +783,11 @@ section{
     .count span{
         font-size: 1.2rem;
     }
-  
-}
-/*page lecture*/
-
-.lecture h2{
-    font-size: var(--h2-font);
-    color: var(--text-color);
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    line-height: 1.11;
-    font-weight: 800;
-    letter-spacing: 1px;
-    
-}
-.lecture p{
-    text-align: justify;
-    text-indent: inherit;
-    justify-items: center;
-    padding: 0 30px;
-}
-.lecture h4{
-    text-align: center;
-    color: var(--other-color);
-    font-size: var(--h2-color);
-}
-.travaux {
-    width: 1300px;
-    height: auto;
-    margin: 20px 100px;
-    display: grid;
-    grid-template-columns: auto auto;
-}
- h1{
-    font-size: var(--h2-font);
-    color: var(--text-color);
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    line-height: 1.11;
-    font-weight: 800;
-    letter-spacing: 1px;
-}
-
-.site img{
-    width: 600px;
-    height: 300px;
-    margin-left: 15px;
-    padding: 10px 10px;
-    box-shadow: 2px 2px 5px white;
-
-}
-div .desc{
-    padding: 15px;
-    text-align: center;
-    font-size: var(--p-font);
+    .travaux{
+        margin-left: 5px;
+        padding: 0px;
+    }
+  .travaux img{
+   max-width: 300px;
+  }
 }
