@@ -790,4 +790,9 @@ section{
   .travaux img{
    max-width: 300px;
   }
+  .newslatter a{
+    width: 80px;
+    font-size: 14px;
+    padding: 4px 10px;
+  }
 }
