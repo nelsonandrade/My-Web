@@ -18,3 +18,45 @@ const sr = ScrollReveal ({
 
 sr.reveal('.home-text', {delay:300, origin:'left'})
 sr.reveal('.about, .services, .portfolio, .blog, .contact,.copyright',{delay:100, origin:'bottom'})
+/*Langues */
+/*Français */
+$(function() {
+    $(".fr").click(function(){
+        $(".navlist").children().eq(0).text("Acceuil");
+        $(".navlist").children().eq(1).text("À propos de moi");
+        $(".navlist").children().eq(2).text("Services");
+        $(".navlist").children().eq(3).text("Portfolio");
+        $(".navlist").children().eq(4).text("Blog");
+        $(".navlist").children().eq(5).text("Contact");
+        $(".language-selected").text("Français");
+        $(".language-selected").removeClass("change-pt");
+        $(".language-selected").addClass("change-fr");
+        
+        /* Section accueil*/
+        $(".home-text").text("Développeur Web");
+        $(".home-text").text("France/ Côte d'Azur");
+        $(".btn").text("Savoir plus");
+    });
+});
+
+/* Português*/
+$(function() {
+    $(".pt").click(function(){
+        $(".navlist").children().eq(0).text("Inicio");
+        $(".navlist").children().eq(1).text("Sobre mim");
+        $(".navlist").children().eq(2).text("Serviços");
+        $(".navlist").children().eq(3).text("Portóflio");
+        $(".navlist").children().eq(4).text("Blog");
+        $(".navlist").children().eq(5).text("Contacto");
+        $(".language-selected").text("Português");
+        $(".language-selected").removeClass("change-fr");
+        $(".language-selected").addClass("change-pt");
+        /* Section accueil*/
+        $(".home-text").text("Développeur Web");
+        $(".home-text").text("França/ Riviera Francesa");
+        $(".btn").text("Saiba mais");
+
+        /* Sobre mim*/
+        $(".about-text").text("Sobre Mim");
+    });
+});
