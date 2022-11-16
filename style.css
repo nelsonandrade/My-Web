@@ -98,10 +98,10 @@ span{
 .language-selected.change-fr :before{
     background-image: url("img/fr.png");
 }
-.language-selected.change-pt :before{
+.language-selected.change-fr :before{
     background-image: url("img/pt.png");
 }
-.language-selected.change-en :before{
+.language-selected.change-fr :before{
     background-image: url("img/en.png");
 }
 

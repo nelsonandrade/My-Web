@@ -22,14 +22,14 @@ sr.reveal('.about, .services, .portfolio, .blog, .contact,.copyright',{delay:100
 /*Français */
 $(function() {
     $(".fr").click(function(){
-        $(".navlist").children().eq(0).text("Acceuil");
-        $(".navlist").children().eq(1).text("À propos de moi");
-        $(".navlist").children().eq(2).text("Services");
-        $(".navlist").children().eq(3).text("Portfolio");
-        $(".navlist").children().eq(4).text("Blog");
-        $(".navlist").children().eq(5).text("Contact");
+        $("#menu-icon").children().eq(0).text("Acceuil");
+        $("#menu-icon").children().eq(1).text("À propos de moi");
+        $("#menu-icon").children().eq(2).text("Services");
+        $("#menu-icon").children().eq(3).text("Portfolio");
+        $("#menu-icon").children().eq(4).text("Blog");
+        $("#menu-icon").children().eq(5).text("Contact");
         $(".language-selected").text("Français");
-        $(".language-selected").removeClass("change-pt");
+        $(".language-selected").removeClass("change-fr");
         $(".language-selected").addClass("change-fr");
         
         /* Section accueil*/
