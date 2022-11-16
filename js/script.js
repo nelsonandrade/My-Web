@@ -29,8 +29,8 @@ $(function() {
         $("#menu-icon").children().eq(4).text("Blog");
         $("#menu-icon").children().eq(5).text("Contact");
         $(".language-selected").text("Français");
-        $(".language-selected").removeClass("change-fr");
-        $(".language-selected").addClass("change-fr");
+        $(".language-selected").removeClass(".change-fr");
+        $(".language-selected").addClass(".change-fr");
         
         /* Section accueil*/
         $(".home-text").text("Développeur Web");
@@ -49,7 +49,7 @@ $(function() {
         $(".navlist").children().eq(4).text("Blog");
         $(".navlist").children().eq(5).text("Contacto");
         $(".language-selected").text("Português");
-        $(".language-selected").removeClass("change-fr");
+        $(".language-selected").removeClass("change-pt");
         $(".language-selected").addClass("change-pt");
         /* Section accueil*/
         $(".home-text").text("Développeur Web");
