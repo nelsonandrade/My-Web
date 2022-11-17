@@ -78,7 +78,7 @@ span{
     font-weight: bold;
 }
 
-.language-selected{
+.language-selected, .language-selected-p, .language-selected-en {
     display: flex;
     align-items: center;
     color: #fff;
@@ -94,14 +94,34 @@ span{
     background-repeat: no-repeat;
     margin-right: 10px;
 }
+.language-selected-p:before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url("img/pt.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+.language-selected-en:before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url("img/uk.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
 /* jQuery Class*/
-.language-selected.change-fr :before{
+.language-selected.change-fr:before{
     background-image: url("img/fr.png");
 }
-.language-selected.change-fr :before{
+.language-selected.change-pt:before{
     background-image: url("img/pt.png");
 }
-.language-selected.change-fr :before{
+.language-selected.change-en:before{
     background-image: url("img/en.png");
 }
 
@@ -126,7 +146,7 @@ span{
     background-color: #8a84841e;
 }
 
-.language ul li a::before{
+.language ul li a:before{
     content: '';
     display: inline-block;
     width: 25px;
@@ -137,13 +157,13 @@ span{
     margin-right: 10px;
 }
 
-a.fr::before{
+a.fr:before{
     background-image: url("img/fr.png");
 }
-a.pt::before{
+a.pt:before{
     background-image: url("img/pt.png");
 }
-a.en::before{
+a.en:before{
     background-image: url("img/uk.png");
 }
 .language:hover ul{
