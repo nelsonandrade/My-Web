@@ -450,13 +450,14 @@ section{
     border-radius: 30px;
     padding: 4px 10px;
     max-width: 100%;
-    width: 400px;
+    width: 450px;
     display: flex;
     justify-content: space-between;
 }
 .contact .newslatter input{
     border: none;
     outline: none;
+    width: 180px;
 }
 .contact .newslatter .cta{
     background:var(--main-color) ;
