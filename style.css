@@ -199,6 +199,7 @@ section{
 .home{
     height: 110vh;
     width: 100%;
+    margin-bottom: 150px;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -209,9 +210,9 @@ section{
 }
 .eu{
     float: right;
-    width: 400px;
+    width: 300px;
     margin-left: 250px;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
 }
 .home-text{
     padding-top: 120px;
@@ -268,16 +269,16 @@ section{
 }
 
 .about{
-   
+    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(2, 2fr);
     align-items: center;
     gap: 2rem;
 }
 .about-img img{
-    max-width: 100%;
+  /*  max-width: 100%;*/
     width: 490px;
-    height: auto;
+   
    border-radius: 20px;
 }
 .about-text h2{
