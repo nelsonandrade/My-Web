@@ -845,6 +845,13 @@ section{
     .home-text h4{
         font-size: 1.2rem;
     }
+    .about-img{
+        display: none;
+    }
+    #about{
+        align-items: center;
+        margin-left: 90px;
+    }
     .count li{
         margin-bottom: 20px;
         font-size: 1rem;
