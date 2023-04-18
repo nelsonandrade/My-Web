@@ -649,9 +649,10 @@ section{
 }
 
 .container .card .content h2{
-  font-size: 1.5em;
+  font-size: 25px;
   font-weight: 700;
   color: var(--clr);
+  margin-bottom: 20px;
 }
 
 .container .card .content p{
@@ -661,8 +662,24 @@ section{
   color: rgb(201, 16, 16);
 }
 .container .card .content a{
-    color: rgb(201, 16, 16);
+    color: #fff;
+    font-size: 18px;
+    padding: 2px;
     
+}
+.container .card .content a:hover{
+    color: rgb(229, 109, 109);
+    background: #000;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgb(111, 105, 105);
+}
+.container .card .content button{
+    background: #6a6a6a;
+    border: 2px solid black;
+    margin-top: 50px;
+    border-radius: 5px;
+    box-shadow: 2px 5px black;
+
 }
 
 
@@ -676,7 +693,7 @@ section{
         top: 15px;
         right: 200px;
     }
-    section{
+    section {
         padding: 80px 2%;
        transition: .3s;
     }
