@@ -54,12 +54,13 @@ header{
 }
 
 body.dark {
-    color: #fff!important;
-    background: #333!important;
+    color: #fff;
+    background: #333;
 }
+
 body.dark .btn-toggle {
     background: #fff;
-    color: #333;
+   color: #333;
 }
 
 .logo{
@@ -356,10 +357,15 @@ section{
 }
 .box{
     background: #161616;
+    color: #fff;
     width: 400px;
     height: 300px;
     padding: 45px 30px;
-    border-radius: 5px;
+    border: 2px solid ;
+    border-top-left-radius: 10px;
+    border-top-right-radius:25px;
+    border-bottom-left-radius:25px;
+    border-bottom-right-radius:10px;
     cursor: pointer;
     transition: all .35s;
 }
