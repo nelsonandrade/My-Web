@@ -62,24 +62,20 @@ $(function() {
 });
 
 /*dark mode */
-const btnToggle = document.querySelector('.btn-toggle');
+// Pega o checkbox
+const botaoDark = document.getElementById('toggle-dark');
 
-btnToggle.addEventListener('click', () => {
+// Verifica se tem no localStorage seleção do dark theme
+if (localStorage.getItem('data-theme') == 'dark') {
+  botaoDark.checked = true;
+}
 
-    const body = document.body;
-
-    if(body.classList.contains('dark')){
-
-        body.classList.add('light')
-        body.classList.remove('dark')
-        btnToggle.innerHTML = "Dark"
-
-    } else if(body.classList.contains('light')){
-
-        body.classList.add('dark')
-        body.classList.remove('light')
-        btnToggle.innerHTML = "Light"
-
+// Liga a função ao checkbox
+botaoDark.addEventListener('change', () => {
+    let theme = localStorage.getItem('data-theme'); // Retrieve saved them from local storage
+    if (!botaoDark.checked){
+        changeThemeToLight()
+    }else{
+        changeThemeToDark()
     }
-
 });

@@ -10,10 +10,11 @@
 }
 
 :root{
+    --body-color:white;
     --bg-color:#ffffff;
     --secound-bg-color:#f9f9f9;
-    --text-color:#fff;
-    --secound-color:#161616;
+    --text-color:rgb(27, 25, 25);
+    --secound-color-nav:#e5e5e5;
     --h2-color:rgb(194, 184, 184);
     --main-color:#ef0454;
     --other-color:#6a6a6a;
@@ -21,8 +22,19 @@
     --h2-font: 3.8rem;
     --p-font:1rem;
 }
+:root[data-theme="dark"]{
+    --body-color:#121212;
+    --bg-color:#ffffff;
+    --secound-bg-color:#f9f9f9;
+    --text-color:#fff;
+    --secound-color-nav:#e5e5e5;
+    --secound-color:#e6dfdf;
+    --h2-color:white;
+    --main-color:#ef0454;
+    --other-color:#6a6a6a;
+}
 body{
-        background-color: var(--secound-color);
+    background-color: var(--body-color);
 }
 header{
     position: fixed;
@@ -37,31 +49,52 @@ header{
     padding: 15px 6%;
 }
 /*dark mode*/
-.btn-toggle {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background: #333;
-    color: #fff;
-    border: 1px solid #333;
+ /*Dark Mode*/
+ .switch {
     display: flex;
-    justify-content: center;
-    align-items: center;    
+    align-items: end;
+    flex-direction: column;
+    position: relative;
+    margin: 0;
+    width: 3.5rem;
+    height: 2rem;
+  }
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  .sliders {
+    position: absolute;
     cursor: pointer;
-}
-
-body.dark {
-    color: #fff;
-    background: #333;
-}
-
-body.dark .btn-toggle {
-    background: #fff;
-   color: #333;
-}
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(215, 215, 228);
+    transition: 0.4s;
+    border-radius: 30px;
+  }
+  .sliders:before {
+    position: absolute;
+    content: "";
+    height: 1.4rem;
+    width: 1.4rem;
+    border-radius: 20px;
+    left: 0.3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+    transition: 0.4s;
+  }
+  input:checked + .sliders {
+    background-color: #37393f;
+  }
+  input:checked + .sliders:before {
+    left: calc(100% - 1.7rem);
+    background: #37393f;
+    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+  }
 
 .logo{
     font-size: 1.9rem;
@@ -78,7 +111,7 @@ span{
     position: relative;
 }
 .navlist a{
-    color: var(--text-color);
+    color: var(--secound-color-nav);
     font-weight: 500;
     font-size: 1rem;
     padding: 10px 20px;
@@ -319,7 +352,7 @@ section{
     margin-bottom: 1.2rem;
 }
 .about-text h5{
-    color: var(--secound-bg-color);
+    color: var(--text-color);
     font-size: 1.3rem;
     margin-bottom: 20px;
     letter-spacing: 2px;
@@ -507,10 +540,12 @@ section{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+   
 }
 .copyright p{
     font-size: 14px;
     font-weight: 500;
+    color: var(--text-color);
 }
 .icon a{
     display: inline-flex;
