@@ -11,6 +11,7 @@
 
 :root{
     --body-color:white;
+    --logo-color:white;
     --bg-color:#ffffff;
     --secound-bg-color:#f9f9f9;
     --text-color:rgb(27, 25, 25);
@@ -99,7 +100,7 @@ header{
 .logo{
     font-size: 1.9rem;
     font-weight: 600;
-    color: var(--text-color) ;
+    color: var(--logo-color) ;
 }
 span{
     color: var(--main-color);
@@ -510,7 +511,7 @@ section{
     align-items: center;  
 }
 .contact h2{
-    color: var(--text-color);
+    color: var(--logo-color);
     font-size: 1.9rem;
 }
 .contact .newslatter{
@@ -530,7 +531,7 @@ section{
 }
 .contact .newslatter .cta{
     background:var(--main-color) ;
-    color: var(--text-color);
+    color: var(--logo-color);
     padding: 8px 20px;
     border-radius: 30px;
 }
@@ -567,7 +568,7 @@ section{
 
 .lecture h2{
     font-size: var(--h2-font);
-    color: var(--text-color);
+    color: var(--logo-color);
     text-align: center;
     margin-top: 50px;
     margin-bottom: 30px;
@@ -575,6 +576,9 @@ section{
     font-weight: 800;
     letter-spacing: 1px;
     
+}
+.contact p{
+    color: var(--bg-color);
 }
 .lecture p{
     text-align: justify;
